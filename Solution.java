@@ -29,17 +29,11 @@ class Solution {
     }
 
     public boolean leafSimilar(TreeNode root1, TreeNode root2) {
-        if(root1 == null || root2 == null){
-            if(root1 == root2){
-                return(true);
-            }
-            return(false);
-        }
         List<Integer> list1 = new ArrayList<>();
         List<Integer> list2 = new ArrayList<>();
         leaves(root1, list1);
         leaves(root2, list2);
-
+        
         if(list1.size() != list2.size()){
             return(false);
         }
