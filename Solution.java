@@ -39,9 +39,6 @@ class Solution {
         List<Integer> list2 = new ArrayList<>();
         leaves(root1, list1);
         leaves(root2, list2);
-        System.out.println(list1);
-        System.out.println(list1);
-        
 
         if(list1.size() != list2.size()){
             return(false);
